@@ -1,0 +1,1 @@
+6. [Статистика, оценки, ЭФР](https://mathmechterver.github.io/stat2022/prac06/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac06/prac.ipynb)
