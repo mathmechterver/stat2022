@@ -13,22 +13,22 @@ td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: #ffffcc }
 .highlight { background: #f8f8f8; }
-.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .c { color: #3D7B7B; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
-.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
-.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
-.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
-.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #9C6500 } /* Comment.Preproc */
+.highlight .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gr { color: #E40000 } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-.highlight .gi { color: #00A000 } /* Generic.Inserted */
-.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gi { color: #008400 } /* Generic.Inserted */
+.highlight .go { color: #717171 } /* Generic.Output */
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
@@ -41,15 +41,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .kt { color: #B00040 } /* Keyword.Type */
 .highlight .m { color: #666666 } /* Literal.Number */
 .highlight .s { color: #BA2121 } /* Literal.String */
-.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .na { color: #687822 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
 .highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
 .highlight .no { color: #880000 } /* Name.Constant */
 .highlight .nd { color: #AA22FF } /* Name.Decorator */
-.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
 .highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nl { color: #767600 } /* Name.Label */
 .highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
@@ -66,11 +66,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
 .highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .sr { color: #A45A77 } /* Literal.String.Regex */
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
@@ -13048,10 +13048,8 @@ div#notebook {
   }
 }
 </style>
-
-
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML-full,Safe"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     init_mathjax = function() {
@@ -13075,11 +13073,6 @@ div#notebook {
                     linebreaks: { 
                     automatic: true 
                     }
-                },
-                "HTML-CSS": {
-                    linebreaks: { 
-                    automatic: true 
-                    }
                 }
             });
         
@@ -13096,14 +13089,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="8.-&#1044;&#1086;&#1074;&#1077;&#1088;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1080;&#1085;&#1090;&#1077;&#1088;&#1074;&#1072;&#1083;&#1099;-&#1076;&#1083;&#1103;-&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1086;&#1074;-&#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;">8. &#1044;&#1086;&#1074;&#1077;&#1088;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077; &#1080;&#1085;&#1090;&#1077;&#1088;&#1074;&#1072;&#1083;&#1099; &#1076;&#1083;&#1103; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1086;&#1074; &#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#8.-&#1044;&#1086;&#1074;&#1077;&#1088;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1080;&#1085;&#1090;&#1077;&#1088;&#1074;&#1072;&#1083;&#1099;-&#1076;&#1083;&#1103;-&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1086;&#1074;-&#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;">&#182;</a></h1>
+<h1 id="8.-%D0%94%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">8. &#1044;&#1086;&#1074;&#1077;&#1088;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077; &#1080;&#1085;&#1090;&#1077;&#1088;&#1074;&#1072;&#1083;&#1099; &#1076;&#1083;&#1103; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1086;&#1074; &#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#8.-%D0%94%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#182;</a></h2><p><a href="https://nsu.ru/mmf/tvims/chernova/ms/lec/node38.html">Доверительные интервалы</a></p>
+<h2 id="%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;<a class="anchor-link" href="#%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F">&#182;</a></h2><p><a href="https://nsu.ru/mmf/tvims/chernova/ms/lec/node38.html">Доверительные интервалы</a></p>
 
 </div>
 </div>
@@ -13129,7 +13122,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-&#1076;&#1083;&#1103;-$\mu$-&#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;">&#1055;&#1088;&#1080;&#1084;&#1077;&#1088; &#1076;&#1083;&#1103; $\mu$ &#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-&#1076;&#1083;&#1103;-$\mu$-&#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;">&#182;</a></h3>
+<h3 id="%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-$%5Cmu$-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#1055;&#1088;&#1080;&#1084;&#1077;&#1088; &#1076;&#1083;&#1103; $\mu$ &#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-$%5Cmu$-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13164,7 +13157,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1056;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090;-&#1090;&#1086;&#1083;&#1100;&#1082;&#1086;-&#1074;-&#1089;&#1083;&#1091;&#1095;&#1072;&#1077;-&#1077;&#1089;&#1083;&#1080;-&#1079;&#1085;&#1072;&#1077;&#1084;-$\sigma$,-&#1072;-&#1095;&#1090;&#1086;-&#1077;&#1089;&#1083;&#1080;-&#1085;&#1077;&#1090;?">&#1056;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1074; &#1089;&#1083;&#1091;&#1095;&#1072;&#1077; &#1077;&#1089;&#1083;&#1080; &#1079;&#1085;&#1072;&#1077;&#1084; $\sigma$, &#1072; &#1095;&#1090;&#1086; &#1077;&#1089;&#1083;&#1080; &#1085;&#1077;&#1090;?<a class="anchor-link" href="#&#1056;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090;-&#1090;&#1086;&#1083;&#1100;&#1082;&#1086;-&#1074;-&#1089;&#1083;&#1091;&#1095;&#1072;&#1077;-&#1077;&#1089;&#1083;&#1080;-&#1079;&#1085;&#1072;&#1077;&#1084;-$\sigma$,-&#1072;-&#1095;&#1090;&#1086;-&#1077;&#1089;&#1083;&#1080;-&#1085;&#1077;&#1090;?">&#182;</a></h3>
+<h3 id="%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B2-%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B5-%D0%B5%D1%81%D0%BB%D0%B8-%D0%B7%D0%BD%D0%B0%D0%B5%D0%BC-$%5Csigma$,-%D0%B0-%D1%87%D1%82%D0%BE-%D0%B5%D1%81%D0%BB%D0%B8-%D0%BD%D0%B5%D1%82?">&#1056;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1074; &#1089;&#1083;&#1091;&#1095;&#1072;&#1077; &#1077;&#1089;&#1083;&#1080; &#1079;&#1085;&#1072;&#1077;&#1084; $\sigma$, &#1072; &#1095;&#1090;&#1086; &#1077;&#1089;&#1083;&#1080; &#1085;&#1077;&#1090;?<a class="anchor-link" href="#%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B2-%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B5-%D0%B5%D1%81%D0%BB%D0%B8-%D0%B7%D0%BD%D0%B0%D0%B5%D0%BC-$%5Csigma$,-%D0%B0-%D1%87%D1%82%D0%BE-%D0%B5%D1%81%D0%BB%D0%B8-%D0%BD%D0%B5%D1%82?">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13201,7 +13194,7 @@ $$P\Big(\frac{(n-1)s^2}{\chi^2_{1 - \alpha / 2}}&lt; \sigma^2 &lt; \frac{(n-1)s^
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1052;&#1088;&#1072;&#1079;&#1100;-1">&#1052;&#1088;&#1072;&#1079;&#1100; 1<a class="anchor-link" href="#&#1052;&#1088;&#1072;&#1079;&#1100;-1">&#182;</a></h3><p>Пусть $ z_{1}, \ldots ,z_{k}$ — совместно независимые стандартные нормальные случайные величины, то есть: $ z_{i}\sim \mathcal{N}(0,1)$. Тогда случайная величина</p>
+<h3 id="%D0%9C%D1%80%D0%B0%D0%B7%D1%8C-1">&#1052;&#1088;&#1072;&#1079;&#1100; 1<a class="anchor-link" href="#%D0%9C%D1%80%D0%B0%D0%B7%D1%8C-1">&#182;</a></h3><p>Пусть $ z_{1}, \ldots ,z_{k}$ — совместно независимые стандартные нормальные случайные величины, то есть: $ z_{i}\sim \mathcal{N}(0,1)$. Тогда случайная величина</p>
 $$X=z_{1}^{2}+\ldots +z_{k}^{2}$$<p>имеет распределение хи-квадрат с $k$ степенями свободы, то есть $$X \sim \chi ^{2}(k)$$</p>
 
 </div>
@@ -13210,7 +13203,7 @@ $$X=z_{1}^{2}+\ldots +z_{k}^{2}$$<p>имеет распределение хи-�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1052;&#1088;&#1072;&#1079;&#1100;-2">&#1052;&#1088;&#1072;&#1079;&#1100; 2<a class="anchor-link" href="#&#1052;&#1088;&#1072;&#1079;&#1100;-2">&#182;</a></h3><p>Пусть $Y_{0},Y_{1},\ldots ,Y_{n}$ — независимые стандартные нормальные случайные величины, такие что $ Y_{i}\sim {\mathcal {N}}(0,1),\;i=0,\ldots ,n$. Тогда распределение случайной величины $t$, где</p>
+<h3 id="%D0%9C%D1%80%D0%B0%D0%B7%D1%8C-2">&#1052;&#1088;&#1072;&#1079;&#1100; 2<a class="anchor-link" href="#%D0%9C%D1%80%D0%B0%D0%B7%D1%8C-2">&#182;</a></h3><p>Пусть $Y_{0},Y_{1},\ldots ,Y_{n}$ — независимые стандартные нормальные случайные величины, такие что $ Y_{i}\sim {\mathcal {N}}(0,1),\;i=0,\ldots ,n$. Тогда распределение случайной величины $t$, где</p>
 <p>$T={\frac {Y_{0}}{\sqrt {{\frac {1}{n}}\sum \limits _{i=1}^{n}Y_{i}^{2}}}}$,
 называется распределением Стьюдента с $n$ степенями свободы $t\sim \mathrm {T}(n)$</p>
 
@@ -13228,7 +13221,7 @@ $$X=z_{1}^{2}+\ldots +z_{k}^{2}$$<p>имеет распределение хи-�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1040;-&#1077;&#1089;&#1083;&#1080;-&#1041;&#1077;&#1088;&#1085;&#1091;&#1083;&#1083;&#1080;,-&#1072;-&#1085;&#1077;-&#1053;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;">&#1040; &#1077;&#1089;&#1083;&#1080; &#1041;&#1077;&#1088;&#1085;&#1091;&#1083;&#1083;&#1080;, &#1072; &#1085;&#1077; &#1053;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;<a class="anchor-link" href="#&#1040;-&#1077;&#1089;&#1083;&#1080;-&#1041;&#1077;&#1088;&#1085;&#1091;&#1083;&#1083;&#1080;,-&#1072;-&#1085;&#1077;-&#1053;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;">&#182;</a></h1><p>$m$ - успехов, $n$ - всего испытаний</p>
+<h1 id="%D0%90-%D0%B5%D1%81%D0%BB%D0%B8-%D0%91%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%BB%D0%B8,-%D0%B0-%D0%BD%D0%B5-%D0%9D%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5">&#1040; &#1077;&#1089;&#1083;&#1080; &#1041;&#1077;&#1088;&#1085;&#1091;&#1083;&#1083;&#1080;, &#1072; &#1085;&#1077; &#1053;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;<a class="anchor-link" href="#%D0%90-%D0%B5%D1%81%D0%BB%D0%B8-%D0%91%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%BB%D0%B8,-%D0%B0-%D0%BD%D0%B5-%D0%9D%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5">&#182;</a></h1><p>$m$ - успехов, $n$ - всего испытаний</p>
 <p>Оценка $\hat{p} = \frac{m}{n}$</p>
 <p>Тогда по ЦПТ</p>
 <p>$\sqrt{n}\Big(\frac{m}{n} - p\Big) = \frac{m - np}{\sqrt{n}} \overset{d}{\rightarrow} \mathcal{N}(0, p(1-p))$</p>
@@ -13251,7 +13244,7 @@ $$X=z_{1}^{2}+\ldots +z_{k}^{2}$$<p>имеет распределение хи-�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;-&#1084;&#1099;&#1089;&#1083;&#1100;:">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103; &#1084;&#1099;&#1089;&#1083;&#1100;:<a class="anchor-link" href="#&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;-&#1084;&#1099;&#1089;&#1083;&#1100;:">&#182;</a></h2><p>Функцию статистики $Y$ мы можем брать <strong>любую</strong>, которая удовлетворяет вышестоящим значениям, чтобы мы могли границы интервала.</p>
+<h2 id="%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-%D0%BC%D1%8B%D1%81%D0%BB%D1%8C:">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103; &#1084;&#1099;&#1089;&#1083;&#1100;:<a class="anchor-link" href="#%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-%D0%BC%D1%8B%D1%81%D0%BB%D1%8C:">&#182;</a></h2><p>Функцию статистики $Y$ мы можем брать <strong>любую</strong>, которая удовлетворяет вышестоящим значениям, чтобы мы могли границы интервала.</p>
 <p>Основная проблема статистики (как области знаний) - найти такие <em>статистики</em> (функции от оценки и реального значения).</p>
 
 </div>
@@ -13260,7 +13253,7 @@ $$X=z_{1}^{2}+\ldots +z_{k}^{2}$$<p>имеет распределение хи-�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1053;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#1053;&#1072; &#1087;&#1072;&#1088;&#1091;<a class="anchor-link" href="#&#1053;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#182;</a></h2><ol>
+<h2 id="%D0%9D%D0%B0-%D0%BF%D0%B0%D1%80%D1%83">&#1053;&#1072; &#1087;&#1072;&#1088;&#1091;<a class="anchor-link" href="#%D0%9D%D0%B0-%D0%BF%D0%B0%D1%80%D1%83">&#182;</a></h2><ol>
 <li>Рассмотрим случайную величину рост мужчин, которая имеет нормальное распределение с $\sigma=7$.  Построим $95\%$ доверительный интервал для среднего роста мужчин по данной выборке:</li>
 </ol>
 <p>$[174.83, 172.75, 158.51, 182.70, 175.53, 161.66, 182.38, 185.49, 174.96, 172.73, 180.90, 169.08, 179.66, 174.01, 166.57, 168.18, 163.92, 174.85, 180.21, 176.37]$</p>
@@ -13287,7 +13280,7 @@ $$X=z_{1}^{2}+\ldots +z_{k}^{2}$$<p>имеет распределение хи-�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1044;&#1086;&#1084;&#1072;">&#1044;&#1086;&#1084;&#1072;<a class="anchor-link" href="#&#1044;&#1086;&#1084;&#1072;">&#182;</a></h1><ol>
+<h1 id="%D0%94%D0%BE%D0%BC%D0%B0">&#1044;&#1086;&#1084;&#1072;<a class="anchor-link" href="#%D0%94%D0%BE%D0%BC%D0%B0">&#182;</a></h1><ol>
 <li><p>(1.25) <a href="https://stepik.org/lesson/16004/step/7?unit=8137">ref</a> На основе продолжительных наблюдений за весом Х г. пакетов с орешками, заполняемых автоматически, установлено, что среднее квадратическое отклонение веса пакетов равно $10$г. Средний вес $100$ наудачу выбранных пакетов оказался равным $249$ г. Укажите доверительный интервал для среднего веса пакетов, построенный с доверительной вероятностью $0.9$. Предполагается, что распределение веса пакетиков подчиняется нормальному закону распределения.</p>
 </li>
 <li><p>(1.25) <a href="https://stepik.org/lesson/27391/step/8?unit=8808">ref</a>В 10000 сеансах игры с автоматом выигрыш появился 4000 раз. Найдите 95% доверительный интервал для вероятности выигрыша.</p>
