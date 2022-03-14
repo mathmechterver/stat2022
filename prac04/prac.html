@@ -13166,11 +13166,15 @@ $$\forall x F_{\xi_n}(x) \to F_{\xi}(x), F_{\mu}(x) = \mu((-\infty, x))$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> Нарисовать для Параболы суммы Дарбу для Римана и для Лебега</p>
-<p><strong>2.</strong> Пример функции, которая неинтегрируема по Риману, но интегрируется по Лебега</p>
-<p><strong>3.</strong> Пусть $\xi_n \overset{d}{\to} \xi$ и $g(x)$ - непрерывная функция. Докажите, что $g(\xi_n) \overset{d}{\to} g(\xi)$</p>
-<p><strong>4.</strong> Если $\xi_n \overset{d}{\to} const$, то $\xi_n \overset{\mathbb{P}}{\to} const$</p>
-<p><strong>5.</strong> Пусть $\{\xi_i\}_{i=1}^{\infty}$ - положительно определенные и $E|\xi_n - \xi| \to 0$. 
+<p><strong>1.</strong> Пусть $\xi_n \overset{d}{\to} \xi$ и $g(x)$ - непрерывная функция. Докажите, что $g(\xi_n) \overset{d}{\to} g(\xi)$</p>
+<p><strong>2.</strong> Как соотносятся между собой следующие типы сходимости? Какая самая сильная?</p>
+<p>$\text{Почти наверное}$ ; $\text{По вероятности}$ ; $\text{По распределению (слабая)}$</p>
+<ol>
+<li>Доказать переходы между каждой парой (более сильная сходимость =&gt; более слабая сходимость).</li>
+<li>Для каждой пары привести пример, когда есть более слабая сходимость, но нет более сильной.</li>
+</ol>
+<p><strong>3.</strong> Если $\xi_n \overset{d}{\to} const$, то $\xi_n \overset{\mathbb{P}}{\to} const$</p>
+<p><strong>4.</strong> Пусть $\{\xi_i\}_{i=1}^{\infty}$ - положительно определенные и $E|\xi_n - \xi| \to 0$. 
 Сходится ли $E|\xi_n + k| \to E|\xi+k|$ для k из $\mathbb{R_{+}}$.</p>
 
 </div>
@@ -13179,18 +13183,16 @@ $$\forall x F_{\xi_n}(x) \to F_{\xi}(x), F_{\mu}(x) = \mu((-\infty, x))$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="%D0%94%D0%97">&#1044;&#1047;<a class="anchor-link" href="#%D0%94%D0%97">&#182;</a></h2>
+<h2 id="%D0%94%D0%97-(%D0%9F%D0%BE%D0%BA%D0%B0-%D0%BD%D0%B5-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B0)">&#1044;&#1047; (&#1055;&#1086;&#1082;&#1072; &#1085;&#1077; &#1075;&#1086;&#1090;&#1086;&#1074;&#1072;)<a class="anchor-link" href="#%D0%94%D0%97-(%D0%9F%D0%BE%D0%BA%D0%B0-%D0%BD%D0%B5-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B0)">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> (1) Нарисовать суммы дарбу и объяснить сходимость гиперболы для Римана и Лебега</p>
-<p><strong>2.</strong> (1) Пусть $\xi_n \overset{d}{\to} \xi$ и $\mu_n \overset{\mathbb{P}}{\to} 0$. Доказать, что
+<p><strong>1.</strong> (1) Пусть $\xi_n \overset{d}{\to} \xi$ и $\mu_n \overset{\mathbb{P}}{\to} 0$. Доказать, что
 $ \xi_n + \mu_n \overset{d}{\to} \xi$</p>
-<p><strong>3.</strong> (1) Приведите пример случайной величины, которая сходится по распределению, но не сходится по вероятности.</p>
-<p><strong>4.</strong> Пусть $\alpha &gt; 0$ и $E|\xi_n|^\alpha &lt; \infty$ при всех n. Доказать, что следующие
+<p><strong>2.</strong> Пусть $\alpha &gt; 0$ и $E|\xi_n|^\alpha &lt; \infty$ при всех n. Доказать, что следующие
 утверждения:</p>
 <ul>
 <li>(1) Если $\xi_n \overset{\mathbb{P}}{\to} \xi$, то $E|\xi_n - \xi|^\alpha \underset{n \to \infty}{\to} 0$ </li>
@@ -13203,7 +13205,7 @@ $ \xi_n + \mu_n \overset{d}{\to} \xi$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="%D0%93%D1%80%D0%BE%D0%B1%D1%8B">&#1043;&#1088;&#1086;&#1073;&#1099;<a class="anchor-link" href="#%D0%93%D1%80%D0%BE%D0%B1%D1%8B">&#182;</a></h2><p><img src="tombs3.png" alt="title"></p>
+<h2 id="%D0%93%D1%80%D0%BE%D0%B1%D1%8B">&#1043;&#1088;&#1086;&#1073;&#1099;<a class="anchor-link" href="#%D0%93%D1%80%D0%BE%D0%B1%D1%8B">&#182;</a></h2><p><img src="https://github.com/mathmechterver/stat2022/blob/master/prac04/tombs3.png?raw=1" alt="title"></p>
 
 </div>
 </div>
