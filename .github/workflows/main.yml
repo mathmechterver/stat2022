@@ -17,11 +17,11 @@ jobs:
       - name: Install jupyter
         run: sudo pip install jupyterlab
 
-      - name: Fix markupsafe # https://github.com/aws/aws-sam-cli/issues/3661
-        run: pip install markupsafe==2.0.1
-
       - name: Install nbconvert
         run: sudo pip install nbconvert
+        
+      - name: Fix markupsafe # https://github.com/aws/aws-sam-cli/issues/3661
+        run: sudo pip install markupsafe==2.0.1
       
       - name: Compile
         run: sudo bash create_html.sh
