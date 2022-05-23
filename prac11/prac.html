@@ -13096,9 +13096,21 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Критерии согласия - это критерии проверки гипотез о том, что эмпирическое (наблюдаемое) распределение $F^*$ соответствует теоретическому распределению вероятностей $F_\xi$.</p>
+<p>Другими словами, имеется СВ $\xi$, и выборка $X_{[n]}$, полученная из распределения данной СВ</p>
+<p>Тогда</p>
+<p>$H_0 : F_\xi(x) = F^*(x)$,</p>
+<p>$H_1 : F_\xi(x) \ne F^*(x)$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9-$%5Cchi%5E2$-(%D0%B3%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B)">&#1050;&#1088;&#1080;&#1090;&#1077;&#1088;&#1080;&#1081; $\chi^2$ (&#1075;&#1080;&#1089;&#1090;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1099;)<a class="anchor-link" href="#%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9-$%5Cchi%5E2$-(%D0%B3%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B)">&#182;</a></h2><p>Разобьем множество значений $\xi$ на отрезки $\bigtriangleup_1, \ldots, \bigtriangleup_r$,
 где $\bigtriangleup_i = (a_{i-1}, a_i], i = 1, \ldots, r$</p>
-<p>$p_i = P\{\xi \in \bigtriangleup_i|H_0\} = F_0(a_i) - F_0(a_{i-1})$</p>
+<p>$p_i = P\{\xi \in \bigtriangleup_i|H_0\} = F_\xi(a_i) - F_\xi(a_{i-1})$</p>
 <p>$n_i = num\{X_j\in \bigtriangleup_i\}$</p>
 
 </div>
@@ -13119,14 +13131,15 @@ $$\chi^2(X_{[n]}) \xrightarrow[n \to \infty]{d} \chi^2(r-1)$$<p><a href="https:/
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9-%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0-(%D1%8D%D0%BC%D0%BF%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)">&#1050;&#1088;&#1080;&#1090;&#1077;&#1088;&#1080;&#1081; &#1050;&#1086;&#1083;&#1084;&#1086;&#1075;&#1086;&#1088;&#1086;&#1074;&#1072; (&#1101;&#1084;&#1087;&#1080;&#1088;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1103; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;)<a class="anchor-link" href="#%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9-%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0-(%D1%8D%D0%BC%D0%BF%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)">&#182;</a></h2><p><a href="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test">wiki</a></p>
-<p>Пусть $F_0(x)$ непрерывна на $\mathbb{R}$</p>
-<p>Статистика Колмогорова $D_{n}(X_{[n]}) = sup_{x\in \mathbb{R}}|F^*_n(x) - F_0(x)|$</p>
+<p>Пусть $F_\xi(x)$ непрерывна на $\mathbb{R}$</p>
+<p>Статистика Колмогорова $D_{n}(X_{[n]}) = sup_{x\in \mathbb{R}}|F^*_n(x) - F_\xi(x)|$</p>
 <p>Если верна $H_0$, то $D_n(X_{[n]}) \xrightarrow[n \to \infty]{п.н.} 0$</p>
-<p>Если верна $H_1$, то $D_n(X_{[n]}) \xrightarrow[n \to \infty]{п.н.} sup_{x\in \mathbb{R}}|G(x) - F_0(x)| &gt; 0$</p>
-<h3 id="%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072; &#1050;&#1086;&#1083;&#1084;&#1086;&#1075;&#1086;&#1088;&#1086;&#1074;&#1072;<a class="anchor-link" href="#%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0">&#182;</a></h3><p>Если $H_0$ - верна и $F_0$- непрерывна, то
+<p>Если верна $H_1$, то $D_n(X_{[n]}) \xrightarrow[n \to \infty]{п.н.} sup_{x\in \mathbb{R}}|G(x) - F_\xi(x)| &gt; 0$</p>
+<h3 id="%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072; &#1050;&#1086;&#1083;&#1084;&#1086;&#1075;&#1086;&#1088;&#1086;&#1074;&#1072;<a class="anchor-link" href="#%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0">&#182;</a></h3><p>Если $H_0$ - верна и $F_\xi$- непрерывна, то
 $P\{\sqrt{n}D_n(X_{[n]}) &lt; z\} \xrightarrow[n \to \infty]{п.н.} K(z) = 1 + 2\sum_{m=1}^{\infty}(-1)^{m}e^{-2m^2z^2}$</p>
 <p>Критическая область
 $V_k = \{\sqrt{n}D_n(X_{[n]}) &gt; d_{1 - \alpha}\}$</p>
+<p>$d_\alpha \approx \sqrt{-\frac12\ln(\frac{1-\alpha}2)}$</p>
 
 </div>
 </div>
@@ -13134,7 +13147,7 @@ $V_k = \{\sqrt{n}D_n(X_{[n]}) &gt; d_{1 - \alpha}\}$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="%D0%9F%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5-%D1%8D%D0%BC%D0%BF%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B8-%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#1055;&#1086;&#1089;&#1090;&#1088;&#1086;&#1077;&#1085;&#1080;&#1077; &#1101;&#1084;&#1087;&#1080;&#1088;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1081; &#1080; &#1090;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1081; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#%D0%9F%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5-%D1%8D%D0%BC%D0%BF%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B8-%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#182;</a></h3><p><img src="dist_func.png" alt="title"></p>
+<h3 id="%D0%9F%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5-%D1%8D%D0%BC%D0%BF%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B8-%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#1055;&#1086;&#1089;&#1090;&#1088;&#1086;&#1077;&#1085;&#1080;&#1077; &#1101;&#1084;&#1087;&#1080;&#1088;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1081; &#1080; &#1090;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1081; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;<a class="anchor-link" href="#%D0%9F%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5-%D1%8D%D0%BC%D0%BF%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B8-%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">&#182;</a></h3><p><img src="https://github.com/mathmechterver/stat2022/blob/master/prac11/dist_func.png?raw=1" alt="title"></p>
 
 </div>
 </div>
@@ -13268,93 +13281,6 @@ $V_k = \{\sqrt{n}D_n(X_{[n]}) &gt; d_{1 - \alpha}\}$</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[0.5488116360940264,
- 0.32928698165641584,
- 0.09878609449692474,
- 0.02311528775263305]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="p">[</span><span class="mi">427</span><span class="p">,</span><span class="mi">235</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span><span class="mi">23</span><span class="p">]</span>
-<span class="n">N</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.59</span><span class="o">**</span><span class="n">i</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mf">0.59</span><span class="p">)</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
-<span class="n">p</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="nb">sum</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
-<span class="n">chi</span><span class="o">=</span><span class="nb">sum</span><span class="p">([((</span><span class="n">n</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">N</span><span class="o">*</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">N</span><span class="o">*</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">n</span><span class="p">))])</span>
-<span class="nb">round</span><span class="p">(</span><span class="n">chi</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3.11</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     </div>
   </div>
