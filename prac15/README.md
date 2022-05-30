@@ -1,1 +1,0 @@
-15. [Баесовская статистика](https://mathmechterver.github.io/stat2022/prac15/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac15/prac.ipynb)

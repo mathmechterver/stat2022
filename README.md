@@ -23,12 +23,4 @@
 
 11. [Критерии согласия](https://mathmechterver.github.io/stat2022/prac11/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac11/prac.ipynb)
 
-12. [AB-тестирование](https://mathmechterver.github.io/stat2022/prac12/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac12/prac.ipynb)
-
-13. [Кластеризация, EM-алгоритм](https://mathmechterver.github.io/stat2022/prac13/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac13/prac.ipynb)
-
-14. [Casual inference](https://mathmechterver.github.io/stat2022/prac14/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac14/prac.ipynb)
-
-15. [Баесовская статистика](https://mathmechterver.github.io/stat2022/prac15/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac15/prac.ipynb)
-
-
+12. [Мартингалы](https://mathmechterver.github.io/stat2022/prac12/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/stat2022/blob/master/prac12/prac.ipynb)
